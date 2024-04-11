@@ -18,26 +18,6 @@
     padding: 20px;
   }
 
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .menu {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .menu button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
-
   .category-title {
     margin-top: 20px;
     font-size: 18px;
@@ -47,17 +27,23 @@
 
   .gif-container {
     display: none;
+  }
+
+  .gif-row {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 10px;
   }
 
   .gif-item {
-    width: calc(20% - 20px);
+    width: calc(10% - 20px);
+    margin-right: 20px;
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    text-align: center;
   }
 
   .gif-item img {
@@ -68,49 +54,29 @@
 <script>
   function toggleCategory(categoryName) {
     var category = document.getElementById(categoryName);
-    category.style.display === 'none' ? category.style.display = 'flex' : category.style.display = 'none';
+    category.style.display === 'none' ? category.style.display = 'block' : category.style.display = 'none';
   }
 </script>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Gallery</h1>
-  </div>
-  <div class="menu">
-    <button onclick="toggleCategory('category1')">Category 1</button>
-    <button onclick="toggleCategory('category2')">Category 2</button>
-    <button onclick="toggleCategory('category3')">Category 3</button>
-    <button onclick="toggleCategory('category4')">Category 4</button>
-  </div>
   <!-- Category 1 -->
-  <div id="category1">
-    <div class="category-title" onclick="toggleCategory('gifContainer1')">Category 1 - Click to Show/Hide</div>
-    <div id="gifContainer1" class="gif-container">
-      <!-- Insert GIFs for Category 1 here -->
+  <div class="category-title" onclick="toggleCategory('category1')">Category 1 - Click to Show/Hide</div>
+  <div id="category1" class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs for Category 1 -->
+      <div class="gif-item">
+        <img src="LINK_IMGUR_GIF_1" alt="GIF 1">
+        <div class="gif-info">
+          <p>Nume: Nume GIF 1</p>
+          <p>Pret: 10 RON</p>
+        </div>
+      </div>
+      <!-- Continue with 9 more gif items -->
     </div>
+    <!-- Continue with additional rows if necessary -->
   </div>
-  <!-- Category 2 -->
-  <div id="category2">
-    <div class="category-title" onclick="toggleCategory('gifContainer2')">Category 2 - Click to Show/Hide</div>
-    <div id="gifContainer2" class="gif-container">
-      <!-- Insert GIFs for Category 2 here -->
-    </div>
-  </div>
-  <!-- Category 3 -->
-  <div id="category3">
-    <div class="category-title" onclick="toggleCategory('gifContainer3')">Category 3 - Click to Show/Hide</div>
-    <div id="gifContainer3" class="gif-container">
-      <!-- Insert GIFs for Category 3 here -->
-    </div>
-  </div>
-  <!-- Category 4 -->
-  <div id="category4">
-    <div class="category-title" onclick="toggleCategory('gifContainer4')">Category 4 - Click to Show/Hide</div>
-    <div id="gifContainer4" class="gif-container">
-      <!-- Insert GIFs for Category 4 here -->
-    </div>
-  </div>
+  <!-- Continue with Category 2, Category 3, Category 4 similarly -->
 </div>
 </body>
 </html>
