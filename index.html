@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f3f3;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .gif-item {
+    width: calc(10% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .gif-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .gif-info {
+    margin-top: 10px;
+  }
+
+  .gif-info p {
+    margin: 5px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="gif-container">
+    <!-- GIF 1 -->
+    <div class="gif-item">
+      <img src="LINK_IMGUR_GIF_1" alt="GIF 1">
+      <div class="gif-info">
+        <p>Nume: Nume GIF 1</p>
+        <p>Pret: 10 RON</p>
+      </div>
+    </div>
+    <!-- GIF 2 -->
+    <div class="gif-item">
+      <img src="LINK_IMGUR_GIF_2" alt="GIF 2">
+      <div class="gif-info">
+        <p>Nume: Nume GIF 2</p>
+        <p>Pret: 15 RON</p>
+      </div>
+    </div>
+    <!-- Continuă până la GIF 800 -->
+  </div>
+</div>
+</body>
+</html>
