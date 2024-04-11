@@ -38,14 +38,21 @@
     cursor: pointer;
   }
 
+  .category-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
   .gif-container {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .gif-item {
-    width: calc(25% - 20px);
+    width: calc(20% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff;
@@ -57,27 +64,11 @@
     width: 100%;
     border-radius: 5px;
   }
-
-  .gif-info {
-    margin-top: 10px;
-  }
-
-  .gif-info p {
-    margin: 5px 0;
-  }
-
-  .category {
-    display: none;
-  }
-
-  .category.active {
-    display: block;
-  }
 </style>
 <script>
   function toggleCategory(categoryName) {
     var category = document.getElementById(categoryName);
-    category.classList.toggle('active');
+    category.style.display === 'none' ? category.style.display = 'flex' : category.style.display = 'none';
   }
 </script>
 </head>
@@ -92,22 +83,32 @@
     <button onclick="toggleCategory('category3')">Category 3</button>
     <button onclick="toggleCategory('category4')">Category 4</button>
   </div>
-  <div class="gif-container">
-    <!-- GIFs for Category 1 -->
-    <div id="category1" class="category">
-      <!-- Insert GIFs here -->
+  <!-- Category 1 -->
+  <div id="category1">
+    <div class="category-title" onclick="toggleCategory('gifContainer1')">Category 1 - Click to Show/Hide</div>
+    <div id="gifContainer1" class="gif-container">
+      <!-- Insert GIFs for Category 1 here -->
     </div>
-    <!-- GIFs for Category 2 -->
-    <div id="category2" class="category">
-      <!-- Insert GIFs here -->
+  </div>
+  <!-- Category 2 -->
+  <div id="category2">
+    <div class="category-title" onclick="toggleCategory('gifContainer2')">Category 2 - Click to Show/Hide</div>
+    <div id="gifContainer2" class="gif-container">
+      <!-- Insert GIFs for Category 2 here -->
     </div>
-    <!-- GIFs for Category 3 -->
-    <div id="category3" class="category">
-      <!-- Insert GIFs here -->
+  </div>
+  <!-- Category 3 -->
+  <div id="category3">
+    <div class="category-title" onclick="toggleCategory('gifContainer3')">Category 3 - Click to Show/Hide</div>
+    <div id="gifContainer3" class="gif-container">
+      <!-- Insert GIFs for Category 3 here -->
     </div>
-    <!-- GIFs for Category 4 -->
-    <div id="category4" class="category">
-      <!-- Insert GIFs here -->
+  </div>
+  <!-- Category 4 -->
+  <div id="category4">
+    <div class="category-title" onclick="toggleCategory('gifContainer4')">Category 4 - Click to Show/Hide</div>
+    <div id="gifContainer4" class="gif-container">
+      <!-- Insert GIFs for Category 4 here -->
     </div>
   </div>
 </div>
