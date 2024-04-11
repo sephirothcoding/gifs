@@ -69,108 +69,59 @@
 <script>
   function toggleCategory(categoryName) {
     var category = document.getElementById(categoryName);
-    category.style.display === 'none' ? category.style.display = 'block' : category.style.display = 'none';
+    if (category.style.display === 'none' || category.style.display === '') {
+      category.style.display = 'block';
+    } else {
+      category.style.display = 'none';
+    }
   }
 </script>
 </head>
 <body>
-  
 <div class="container">
-  
-  
   <!-- Christmas -->
   <div class="category-title" onclick="toggleCategory('Christmas')">Christmas - Click to Show/Hide</div>
   <div id="Christmas" class="gif-container">
-
-    
-    <div class="gif-row">
-      <!-- GIFs for Christmas (Row 1) -->
-      <!-- Replace placeholder images and info with actual ones -->
-      
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <!-- Repeat for 9 more gif items -->
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-    </div>
-
-
-     <div class="gif-row">
-      <!-- GIFs for Christmas (Row 1) -->
-      <!-- Replace placeholder images and info with actual ones -->
-      
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <!-- Repeat for 9 more gif items -->
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-    </div>
-
-
-
-     <div class="gif-row">
-      <!-- GIFs for Christmas (Row 1) -->
-      <!-- Replace placeholder images and info with actual ones -->
-      
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <!-- Repeat for 9 more gif items -->
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 xats</p></div></div>
-    </div>
-
-
-
-    
-    
-    <div class="gif-row">
-      
-      <!-- GIFs for Christmas (Row 2) -->
-      <!-- Repeat for 10 gif items -->
-    </div>
-    
+    <!-- GIFs for Christmas -->
+    <!-- Add your gifs here -->
   </div>
 
- <!-- Halloween -->
-  <div class="category-title" onclick="toggleCategory('Christmas')">Christmas - Click to Show/Hide</div>
-  <div id="Christmas" class="gif-container">
-
-    
-    <div class="gif-row">
-      <!-- GIFs for Christmas (Row 1) -->
-      <!-- Replace placeholder images and info with actual ones -->
-      <div class="gif-item">
-        <img src="placeholder.gif" alt="GIF 1">
-        <div class="gif-info">
-          <p>Nume: Nume GIF 1</p>
-          <p>Pret: 10 xats</p>
-        </div>
-      </div>
-      <!-- Repeat for 9 more gif items -->
-    </div>
-    <div class="gif-row">
-      <!-- GIFs for Christmas (Row 2) -->
-      <!-- Repeat for 10 gif items -->
-    </div>
-    
+  <!-- Halloween -->
+  <div class="category-title" onclick="toggleCategory('Halloween')">Halloween - Click to Show/Hide</div>
+  <div id="Halloween" class="gif-container">
+    <!-- GIFs for Halloween -->
+    <!-- Add your gifs here -->
   </div>
 
-  
+  <!-- Cupluri -->
+  <div class="category-title" onclick="toggleCategory('Cupluri')">Cupluri - Click to Show/Hide</div>
+  <div id="Cupluri" class="gif-container">
+    <!-- GIFs for Cupluri -->
+    <!-- Add your gifs here -->
+  </div>
+
+  <!-- Fara poza -->
+  <div class="category-title" onclick="toggleCategory('FaraPoza')">Fara Poza - Click to Show/Hide</div>
+  <div id="FaraPoza" class="gif-container">
+    <!-- Content without images -->
+    <p>Aceasta categorie nu conține imagini.</p>
+  </div>
+
+  <!-- Gifuri -->
+  <div class="category-title" onclick="toggleCategory('Gifuri')">Gifuri - Click to Show/Hide</div>
+  <div id="Gifuri" class="gif-container">
+    <!-- GIFs for Gifuri -->
+    <!-- Add your gifs here -->
+  </div>
+
+  <!-- Blinkuri -->
+  <div class="category-title" onclick="toggleCategory('Blinkuri')">Blinkuri - Click to Show/Hide</div>
+  <div id="Blinkuri" class="gif-container">
+    <!-- GIFs for Blinkuri -->
+    <!-- Add your gifs here -->
+  </div>
+
+  <!-- Continue with additional categories if needed -->
 
 </div>
 </body>
