@@ -8,24 +8,44 @@
   body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f3f3f3;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .menu button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
   }
 
   .gif-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
   }
 
   .gif-item {
-    width: calc(10% - 20px);
+    width: calc(25% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff;
@@ -45,28 +65,50 @@
   .gif-info p {
     margin: 5px 0;
   }
+
+  .category {
+    display: none;
+  }
+
+  .category.active {
+    display: block;
+  }
 </style>
+<script>
+  function toggleCategory(categoryName) {
+    var category = document.getElementById(categoryName);
+    category.classList.toggle('active');
+  }
+</script>
 </head>
 <body>
 <div class="container">
+  <div class="header">
+    <h1>Gallery</h1>
+  </div>
+  <div class="menu">
+    <button onclick="toggleCategory('category1')">Category 1</button>
+    <button onclick="toggleCategory('category2')">Category 2</button>
+    <button onclick="toggleCategory('category3')">Category 3</button>
+    <button onclick="toggleCategory('category4')">Category 4</button>
+  </div>
   <div class="gif-container">
-    <!-- GIF 1 -->
-    <div class="gif-item">
-      <img src="LINK_IMGUR_GIF_1" alt="GIF 1">
-      <div class="gif-info">
-        <p>Nume: Nume GIF 1</p>
-        <p>Pret: 10 RON</p>
-      </div>
+    <!-- GIFs for Category 1 -->
+    <div id="category1" class="category">
+      <!-- Insert GIFs here -->
     </div>
-    <!-- GIF 2 -->
-    <div class="gif-item">
-      <img src="LINK_IMGUR_GIF_2" alt="GIF 2">
-      <div class="gif-info">
-        <p>Nume: Nume GIF 2</p>
-        <p>Pret: 15 RON</p>
-      </div>
+    <!-- GIFs for Category 2 -->
+    <div id="category2" class="category">
+      <!-- Insert GIFs here -->
     </div>
-    <!-- Continuă până la GIF 800 -->
+    <!-- GIFs for Category 3 -->
+    <div id="category3" class="category">
+      <!-- Insert GIFs here -->
+    </div>
+    <!-- GIFs for Category 4 -->
+    <div id="category4" class="category">
+      <!-- Insert GIFs here -->
+    </div>
   </div>
 </div>
 </body>
