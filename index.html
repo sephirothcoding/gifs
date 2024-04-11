@@ -69,89 +69,41 @@
 <script>
   function toggleCategory(categoryName) {
     var category = document.getElementById(categoryName);
-    if (category.style.display === 'none' || category.style.display === '') {
-      category.style.display = 'block';
-    } else {
-      category.style.display = 'none';
-    }
+    category.style.display === 'none' ? category.style.display = 'block' : category.style.display = 'none';
   }
 </script>
 </head>
 <body>
 <div class="container">
-  <!-- Christmas -->
+  <!-- Category Christmas -->
   <div class="category-title" onclick="toggleCategory('Christmas')">Christmas - Click to Show/Hide</div>
   <div id="Christmas" class="gif-container">
     <div class="gif-row">
       <!-- GIFs for Christmas -->
-      <!-- Add your gifs here -->
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
+      <!-- Continue with 8 more gif items -->
     </div>
     <div class="gif-row">
-      <!-- Add your gifs here -->
+      <!-- Continue with 10 more gif items -->
     </div>
   </div>
 
-  <!-- Halloween -->
+  <!-- Category Halloween -->
   <div class="category-title" onclick="toggleCategory('Halloween')">Halloween - Click to Show/Hide</div>
   <div id="Halloween" class="gif-container">
     <div class="gif-row">
       <!-- GIFs for Halloween -->
-      <!-- Add your gifs here -->
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
+      <!-- Continue with 8 more gif items -->
     </div>
     <div class="gif-row">
-      <!-- Add your gifs here -->
+      <!-- Continue with 10 more gif items -->
     </div>
   </div>
 
-  <!-- Cupluri -->
-  <div class="category-title" onclick="toggleCategory('Cupluri')">Cupluri - Click to Show/Hide</div>
-  <div id="Cupluri" class="gif-container">
-    <div class="gif-row">
-      <!-- GIFs for Cupluri -->
-      <!-- Add your gifs here -->
-    </div>
-    <div class="gif-row">
-      <!-- Add your gifs here -->
-    </div>
-  </div>
-
-  <!-- Fara poza -->
-  <div class="category-title" onclick="toggleCategory('FaraPoza')">Fara Poza - Click to Show/Hide</div>
-  <div id="FaraPoza" class="gif-container">
-    <div class="gif-row">
-      <!-- Content without images -->
-      <p>Aceasta categorie nu conține imagini.</p>
-    </div>
-    <div class="gif-row">
-      <!-- Content without images -->
-    </div>
-  </div>
-
-  <!-- Gifuri -->
-  <div class="category-title" onclick="toggleCategory('Gifuri')">Gifuri - Click to Show/Hide</div>
-  <div id="Gifuri" class="gif-container">
-    <div class="gif-row">
-      <!-- GIFs for Gifuri -->
-      <!-- Add your gifs here -->
-    </div>
-    <div class="gif-row">
-      <!-- Add your gifs here -->
-    </div>
-  </div>
-
-  <!-- Blinkuri -->
-  <div class="category-title" onclick="toggleCategory('Blinkuri')">Blinkuri - Click to Show/Hide</div>
-  <div id="Blinkuri" class="gif-container">
-    <div class="gif-row">
-      <!-- GIFs for Blinkuri -->
-      <!-- Add your gifs here -->
-    </div>
-    <div class="gif-row">
-      <!-- Add your gifs here -->
-    </div>
-  </div>
-
-  <!-- Continue with additional categories if needed -->
+  <!-- Continue with Cupluri, Fara poza, Gifuri, and Blinkuri similarly -->
 
 </div>
 </body>
