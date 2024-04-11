@@ -42,10 +42,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: center; /* Center the gifs horizontally */
   }
 
   .gif-item {
-    width: calc(50% - 20px); /* 50% width for mobile */
+    width: calc(10% - 20px); /* Adjust the width to fit 10 gifs per row */
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -56,15 +57,13 @@
   }
 
   .gif-item img {
-    width: 100%;
+    max-width: 80px; /* Limit the maximum width of the gif */
+    max-height: 80px; /* Limit the maximum height of the gif */
     border-radius: 5px;
   }
 
-  @media only screen and (min-width: 768px) {
-    /* Adjust styles for tablets and desktops */
-    .gif-item {
-      width: calc(25% - 20px); /* 25% width for tablets and desktops */
-    }
+  .gif-info {
+    margin-top: 10px;
   }
 </style>
 <script>
@@ -83,19 +82,12 @@
       <!-- GIFs for Category 1 -->
       <div class="gif-item">
         <img src="https://i.postimg.cc/WzQHbDfK/anigif.gif" alt="GIF 1">
+        <div class="gif-info">
+          <p>Nume: Nume GIF 1</p>
+          <p>Pret: 10 RON</p>
+        </div>
       </div>
-      <div class="gif-item">
-        <img src="https://xatimg.com/image/oTFF8Cy4B9GG.gif" alt="GIF 2">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/bAQhxbSa0C.gif" alt="GIF 3">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/Ls9yBwITme.gif" alt="GIF 4">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/mluPj2QjoG.gif" alt="GIF 5">
-      </div>
+      <!-- Repeat for 9 more gif items -->
     </div>
     <!-- Continue with additional rows if necessary -->
   </div>
@@ -106,49 +98,18 @@
     <div class="gif-row">
       <!-- GIFs for Category 2 -->
       <div class="gif-item">
-        <img src="https://img.xatblog.net/image/PP9E7f5jIut.gif" alt="GIF 1">
+        <img src="https://i.postimg.cc/7Y34cDR9/anigif.gif" alt="GIF 1">
+        <div class="gif-info">
+          <p>Nume: Nume GIF 2</p>
+          <p>Pret: 15 RON</p>
+        </div>
       </div>
-      <div class="gif-item">
-        <img src="https://i.postimg.cc/50RTHKR6/anigif.gif" alt="GIF 2">
-      </div>
-      <div class="gif-item">
-        <img src="https://i.postimg.cc/7Y34cDR9/anigif.gif" alt="GIF 3">
-      </div>
-      <div class="gif-item">
-        <img src="https://i.postimg.cc/kM8P6q7C/anigif.gif" alt="GIF 4">
-      </div>
-      <div class="gif-item">
-        <img src="https://i.postimg.cc/x11ZR2Vc/anigif.gif" alt="GIF 5">
-      </div>
+      <!-- Repeat for 9 more gif items -->
     </div>
     <!-- Continue with additional rows if necessary -->
   </div>
 
-  <!-- Category 3 -->
-  <div class="category-title" onclick="toggleCategory('category3')">Category 3 - Click to Show/Hide</div>
-  <div id="category3" class="gif-container">
-    <div class="gif-row">
-      <!-- GIFs for Category 3 -->
-      <div class="gif-item">
-        <img src="https://i.postimg.cc/WzQHbDfK/anigif.gif" alt="GIF 1">
-      </div>
-      <div class="gif-item">
-        <img src="https://xatimg.com/image/oTFF8Cy4B9GG.gif" alt="GIF 2">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/bAQhxbSa0C.gif" alt="GIF 3">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/Ls9yBwITme.gif" alt="GIF 4">
-      </div>
-      <div class="gif-item">
-        <img src="https://img.xatblog.net/image/mluPj2QjoG.gif" alt="GIF 5">
-      </div>
-    </div>
-    <!-- Continue with additional rows if necessary -->
-  </div>
-
-  <!-- Continue with Category 4, Category 5 similarly -->
+  <!-- Continue with Category 3, Category 4 similarly -->
 
 </div>
 </body>
