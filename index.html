@@ -16,6 +16,26 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .page-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(135deg, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
   }
 
   .category-title {
@@ -76,8 +96,8 @@
 <body>
 <div class="container">
 
-  <p> Page under construction </p>
-  
+  <div class="page-title">Page under construction</div>
+
   <!-- Category Gif 1 Photo 1 Name -->
   <div class="category-title" onclick="toggleCategory('Gif 1 Photo 1 Name')">Gif 1 Photo 1 Name - Click to Show/Hide</div>
   <div id="Gif 1 Photo 1 Name" class="gif-container">
@@ -86,30 +106,9 @@
       <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
       <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
       <!-- Continue with 8 more gif items -->
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      
     </div>
     <div class="gif-row">
       <!-- Continue with 10 more gif items -->
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
-      <div class="gif-item"><img src="link_gif" alt="Numele Gif"><div class="gif-info"><p>Nume: Numele Gif</p><p>Pret: 10 RON</p></div></div>
-
     </div>
   </div>
 
@@ -127,58 +126,8 @@
     </div>
   </div>
 
- <!-- Category Name -->
-<div class="category-title" onclick="toggleCategory('category_name')">Category Name - Click to Show/Hide</div>
-<div id="category_name" class="gif-container">
-  <!-- First Row of GIFs -->
-  <div class="gif-row">
-    <div class="gif-item"><img src="link_gif1" alt="Numele Gif 1"><div class="gif-info"><p>Nume: Numele Gif 1</p><p>Pret: 10 RON</p></div></div>
-    <div class="gif-item"><img src="link_gif2" alt="Numele Gif 2"><div class="gif-info"><p>Nume: Numele Gif 2</p><p>Pret: 15 RON</p></div></div>
-    <!-- Continua cu alte gif-uri -->
-  </div>
-  <!-- Second Row of GIFs -->
-  <div class="gif-row">
-    <div class="gif-item"><img src="link_gif3" alt="Numele Gif 3"><div class="gif-info"><p>Nume: Numele Gif 3</p><p>Pret: 20 RON</p></div></div>
-    <div class="gif-item"><img src="link_gif4" alt="Numele Gif 4"><div class="gif-info"><p>Nume: Numele Gif 4</p><p>Pret: 25 RON</p></div></div>
-    <!-- Continua cu alte gif-uri -->
-  </div>
-  <!-- Poti adauga mai multe randuri de gif-uri daca e nevoie -->
-</div>
-
-
-
-
-
-  <!-- Category Name -->
-<div class="category-title" onclick="toggleCategory('category_name')">Category Name - Click to Show/Hide</div>
-<div id="category_name" class="gif-container">
-  <!-- First Row of GIFs -->
-  <div class="gif-row">
-    <div class="gif-item"><img src="link_gif1" alt="Numele Gif 1"><div class="gif-info"><p>Nume: Numele Gif 1</p><p>Pret: 10 RON</p></div></div>
-    <div class="gif-item"><img src="link_gif2" alt="Numele Gif 2"><div class="gif-info"><p>Nume: Numele Gif 2</p><p>Pret: 15 RON</p></div></div>
-    <!-- Continua cu alte gif-uri -->
-  </div>
-  <!-- Second Row of GIFs -->
-  <div class="gif-row">
-    <div class="gif-item"><img src="link_gif3" alt="Numele Gif 3"><div class="gif-info"><p>Nume: Numele Gif 3</p><p>Pret: 20 RON</p></div></div>
-    <div class="gif-item"><img src="link_gif4" alt="Numele Gif 4"><div class="gif-info"><p>Nume: Numele Gif 4</p><p>Pret: 25 RON</p></div></div>
-    <!-- Continua cu alte gif-uri -->
-  </div>
-  <!-- Poti adauga mai multe randuri de gif-uri daca e nevoie -->
-</div>
-
-
-
-
-
-
-
-
-
-  
-
-
-  
+  <!-- Footer -->
+  <div class="footer">&copy; 2024 All rights reserved</div>
 
 </div>
 </body>
