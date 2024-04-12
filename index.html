@@ -13,17 +13,18 @@
   }
 
   .container {
-    max-width: 100%; /* Adaptă lățimea containerului la lățimea ecranului */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #204b7ca6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     margin-top: 20px;
   }
 
   .page-title {
-    font-size: 24px; /* Redu mărimea fontului pentru a se potrivi pe ecranele mai mici */
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
     background-image: linear-gradient(135deg, #abb9c2, #87bbdd);
@@ -35,12 +36,11 @@
   .footer {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px; /* Redu mărimea fontului pentru a se potrivi pe ecranele mai mici */
   }
 
   .category-title {
     margin-top: 20px;
-    font-size: 20px; /* Redu mărimea fontului pentru a se potrivi pe ecranele mai mici */
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     text-align: left;
@@ -49,7 +49,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(135deg, #abb9c2, #87bbdd);
+   background-image: linear-gradient(135deg, #abb9c2, #87bbdd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -66,7 +66,7 @@
   }
 
   .gif-item {
-    width: calc(25% - 20px); /* Redimensionează elementele gif pentru a se potrivi pe ecranele mai mici */
+    width: calc(10% - 20px); /* Adjust the width to fit 10 gifs per row */
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -77,15 +77,50 @@
   }
 
   .gif-item img {
-    max-width: 100%; /* Asigură ca imaginea să nu depășească lățimea containerului */
-    max-height: auto; /* Permite imaginii să-și păstreze proporțiile */
+    max-width: 80px; /* Limit the maximum width of the gif */
+    max-height: 80px; /* Limit the maximum height of the gif */
     border-radius: 5px;
   }
 
   .gif-info {
-    font-size: 12px; /* Redu mărimea fontului pentru a se potrivi pe ecranele mai mici */
+    font-size: 10px;
     margin-top: 10px;
   }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+  /* Adaugă aici stilurile pentru optimizarea pentru mobil */
+  .container {
+    padding: 10px; /* Reducem padding-ul pentru a face elementele mai compacte */
+  }
+
+  .category-title {
+    font-size: 20px; /* Reducem dimensiunea textului pentru titluri */
+  }
+
+  .gif-item {
+    width: calc(25% - 10px); /* Ajustăm lățimea pentru a afișa doar 4 elemente pe rând */
+    margin-right: 10px; /* Reducem spațiul dintre elemente */
+    margin-bottom: 10px; /* Reducem spațiul dintre rânduri */
+  }
+
+  .gif-item img {
+    max-width: 60px; /* Reducem dimensiunea maximă a imaginilor pentru a se potrivi pe ecranele mai mici */
+    max-height: 60px;
+  }
+
+  .gif-info {
+    font-size: 8px; /* Reducem dimensiunea textului pentru informații */
+  }
+}
+
+
+
+  
+
+  
 </style>
 <script>
   function toggleCategory(categoryName) {
@@ -99,8 +134,126 @@
 
   <div class="page-title">GIF avatar gallery</div>
 
-  <!-- Adaugă restul categoriilor aici -->
+  <!-- Category Gif 1 Photo 1 Name -->
+  <div class="category-title" onclick="toggleCategory('Gif 1 Photo 1 Name')">Gif 1 Photo 1 Name - Click to Show/Hide</div>
+  <div id="Gif 1 Photo 1 Name" class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs for Gif 1 Photo 1 Name -->
+      <div class="gif-item"><img src="https://i.postimg.cc/Prs04ps9/anigif1.gif" ><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://i.postimg.cc/LXg0kRym/anigif2.gif" ><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/y8n5sLgC/anigif3.gif" ><div class="gif-info"><p>GIF 3 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/hvFZpwwT/anigif4.gif" ><div class="gif-info"><p>GIF 4 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/3wRqR2m4/anigif5.gif" ><div class="gif-info"><p>GIF 5 500 xats</p></p></div></div>
+      
+         <div class="gif-item"><img src="https://i.postimg.cc/yYmtr17d/anigif6.gif" ><div class="gif-info"><p>GIF 6 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/NGTz5s94/anigif7.gif"><div class="gif-info"><p>GIF 7 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/SRWT5dF5/anigif8.gif" ><div class="gif-info"><p>GIF 8 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/N0zzrLkN/anigif9.gif" ><div class="gif-info"><p>GIF 9 500 xats</p></p></div></div>
+         <div class="gif-item"><img src="https://i.postimg.cc/RVBbtkwz/anigif10.gif" ><div class="gif-info"><p>GIF 10 500 xats</p></p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+          <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 1"><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 2"><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+      <!-- Continue with 10 more gif items -->
+    </div>
+  </div>
 
+  <!-- Category Gif 2 Photo 2 name ( couples)  -->
+  <div class="category-title" onclick="toggleCategory('Gif 2 Photo 2 name ( couples) ')">Gif 2 Photo 2 name ( couples)  - Click to Show/Hide</div>
+  <div id="Gif 2 Photo 2 name ( couples) " class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs 2 Photo 2 name ( couples)  -->
+         <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 1"><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 2"><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+          <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 1"><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 2"><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+      <!-- Continue with 10 more gif items -->
+    </div>
+  </div>
+
+
+  
+  <!-- Category Gif no Photo ( only name)  -->
+  <div class="category-title" onclick="toggleCategory('Gif no Photo ( only name)')">Gif no Photo ( only name)  - Click to Show/Hide</div>
+  <div id="Gif no Photo ( only name)" class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs no Photo ( only name)  -->
+         <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 1"><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 2"><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+      <!-- Continue with 10 more gif items -->
+          <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 1"><div class="gif-info"><p>GIF 1 500 xats</p></p></div></div>
+      <div class="gif-item"><img src="https://xatimg.com/image/9MI2GZLuMXJG.png" alt="GIF 2"><div class="gif-info"><p>GIF 2 500 xats</p></p></div></div>
+    </div>
+  </div>
+
+
+
+
+    
+  <!-- Category Halloween  -->
+  <div class="category-title" onclick="toggleCategory('Halloween')">Halloween  - Click to Show/Hide</div>
+  <div id="Halloween" class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs Halloween  -->
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+      <!-- Continue with 10 more gif items -->
+    </div>
+  </div>
+
+
+
+
+    <!-- Category Christmas   -->
+  <div class="category-title" onclick="toggleCategory('Christmas ')">Christmas  - Click to Show/Hide</div>
+  <div id="Christmas " class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs Christmas   -->
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+      <!-- Continue with 10 more gif items -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+      <!-- Category Blinks    -->
+  <div class="category-title" onclick="toggleCategory('Blinks')">Blinks   - Click to Show/Hide</div>
+  <div id="Blinks" class="gif-container">
+    <div class="gif-row">
+      <!-- GIFs Blinks    -->
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 1"><div class="gif-info"><p>Nume: Nume GIF 1</p><p>Pret: 10 RON</p></div></div>
+      <div class="gif-item"><img src="placeholder.gif" alt="GIF 2"><div class="gif-info"><p>Nume: Nume GIF 2</p><p>Pret: 15 RON</p></div></div>
+      <!-- Continue with 8 more gif items -->
+    </div>
+    <div class="gif-row">
+      <!-- Continue with 10 more gif items -->
+    </div>
+  </div>
+
+
+  
+  
+  
+  
   <!-- Footer -->
   <div class="footer">&copy; 2024 All rights reserved</div>
 
